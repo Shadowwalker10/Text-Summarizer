@@ -6,6 +6,13 @@ __pycache__/
 # C extensions
 *.so
 
+# Files
+research\pegasus-samsum
+research/pegasus-samsum
+
+research\tokenizer
+research/tokenizer
+
 # Distribution / packaging
 .Python
 build/
