@@ -7,10 +7,7 @@ __pycache__/
 *.so
 
 # Files
-research\pegasus-samsum
 research/pegasus-samsum
-
-research\tokenizer
 research/tokenizer
 
 # Distribution / packaging
