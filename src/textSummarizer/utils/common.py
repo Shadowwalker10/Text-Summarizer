@@ -43,7 +43,7 @@ return x*y
 get_prod(2, "4")---> This now throws an error
 """
 @ensure_annotations
-def read_yamp(path_to_yaml_file:Path)->ConfigBox:
+def read_yaml(path_to_yaml_file:Path)->ConfigBox:
     """
     Reads yaml file and return configbox object
 
