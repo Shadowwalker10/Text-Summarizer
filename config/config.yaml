@@ -3,3 +3,24 @@ artifacts_root: artifacts
 data_ingestion:
   root_dir: artifacts/data_ingestion
   data_to_load: samsum
+
+data_transformation:
+  root_dir: artifacts/data_transformation
+  tokenizer_name: google/pegasus-cnn_dailymail
+  train_size: 0.01
+  test_size: 0.025
+  validation_size: 0.006
+  input_encoding_length: 32
+  target_encoding_length: 8
+
+model_trainer:
+  root_dir: artifacts/model_trainer
+  model_ckpt: google/pegasus-cnn_dailymail
+
+model_evaluation:
+  root_dir: artifacts/model_evaluation
+  model_path: artifacts/model_trainer/pegasus-samsum-model
+  tokenizer_path: artifacts/model_trainer/tokenizer
+  metrics_file_name: artifacts/model_evaluation/metrics.csv
+
+
